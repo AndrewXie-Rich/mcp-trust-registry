@@ -132,7 +132,7 @@ In rough order of value:
 
 ## About us
 
-The reference implementation lives inside [X-Hub-System](https://github.com/AndrewXie-Rich/x-hub-system) (a self-hosted AI agent governance plane) as its skills trust subsystem. We extracted the spec because the underlying primitive — attest, capability-scope, enforce, revoke — is independently useful to the MCP ecosystem regardless of whether anyone uses X-Hub.
+A reference implementation is being developed separately in X-Hub-System (a self-hosted AI agent governance plane) as its skills trust subsystem. We extracted the spec because the underlying primitive — attest, capability-scope, enforce, revoke — is independently useful to the MCP ecosystem regardless of whether anyone uses X-Hub.
 
 We are a small project (solo maintainer + small reviewer pool). We mention this because it directly bounds what we can do alone: write the spec, ship a reference Rust implementation on macOS and Linux, seed initial attestations. We cannot run a global trust registry as a service. The federated design isn't only philosophical; it's also what one person can realistically maintain.
 

@@ -10,7 +10,7 @@ EXAMPLES_DIR="$SCHEMAS_DIR/examples"
 
 if [ ! -d "$SCHEMAS_DIR" ]; then
   echo "ERROR: schemas directory not found at $SCHEMAS_DIR"
-  echo "       run this script from the x-hub-system repo root"
+  echo "       run this script from the mcp-trust-registry repo root"
   exit 1
 fi
 

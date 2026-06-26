@@ -10,7 +10,7 @@
 
 [Specification (v0.1 draft)](spec/protocol-v0.1.md) · [60-second demo](demo-60s.md) · 中文 (TBD)
 
-> This repository hosts the public v0.1 draft of the standalone `mcp-trust-registry` spec. Development source originated in [X-Hub-System](https://github.com/AndrewXie-Rich/x-hub-system), but public review can happen here.
+> This repository hosts the public v0.1 draft of the standalone `mcp-trust-registry` spec. Development source originated in the X-Hub-System project, but public review can happen here.
 
 ## What you see
 
@@ -89,7 +89,7 @@ Full data model and wire format: [`spec/protocol-v0.1.md`](spec/protocol-v0.1.md
 
 Schemas validate with [`scripts/check_mcp_trust_schemas.sh`](scripts/check_mcp_trust_schemas.sh).
 
-A reference deployment of the proxy ships inside [X-Hub-System](https://github.com/AndrewXie-Rich/x-hub-system) as its skills trust subsystem.
+A reference deployment of the proxy is being developed in the X-Hub-System project as its skills trust subsystem.
 
 ## Relationship to MCP
 
@@ -105,7 +105,7 @@ We are pre-RFC. The most valuable contribution right now is **review of the spec
 - The federation model (§7) — does it survive realistic adversarial registries?
 - The threat model (§12) — what did we miss?
 
-Open issues at <https://github.com/AndrewXie-Rich/mcp-trust-registry/issues>. The canonical draft remains in X-Hub-System until v0.1 stabilizes.
+Open issues at <https://github.com/AndrewXie-Rich/mcp-trust-registry/issues>.
 
 ## License
 

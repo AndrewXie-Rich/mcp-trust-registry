@@ -5,12 +5,16 @@ on:
     branches: [main]
     paths:
       - 'schemas/**'
+      - 'examples/**'
       - 'scripts/check_mcp_trust_schemas.sh'
+      - 'scripts/verify_examples.js'
       - '.github/workflows/schemas.yml'
   pull_request:
     paths:
       - 'schemas/**'
+      - 'examples/**'
       - 'scripts/check_mcp_trust_schemas.sh'
+      - 'scripts/verify_examples.js'
       - '.github/workflows/schemas.yml'
 
 permissions:
@@ -26,3 +30,5 @@ jobs:
           node-version: '20'
       - name: Validate schemas and examples
         run: ./scripts/check_mcp_trust_schemas.sh
+      - name: Verify example chain consistency
+        run: node scripts/verify_examples.js --example

@@ -8,7 +8,7 @@
 
 > **A trust layer above MCP.** Sigstore-style attestations + capability tokens + a local enforcement proxy. So your AI agent can't `rm -rf` because an MCP server "just needed shell access".
 
-[Specification (v0.1 draft)](spec/protocol-v0.1.md) · [60-second demo](demo-60s.md) · 中文 (TBD)
+[Specification (v0.1 draft)](spec/protocol-v0.1.md) · [60-second demo](demo-60s.md) · [Examples](examples/README.md) · 中文 (TBD)
 
 > This repository hosts the public v0.1 draft of the standalone `mcp-trust-registry` spec. Development source originated in the X-Hub-System project, but public review can happen here.
 
@@ -81,8 +81,9 @@ Full data model and wire format: [`spec/protocol-v0.1.md`](spec/protocol-v0.1.md
 | Component | State |
 |---|---|
 | Specification v0.1 | Draft, pre-RFC |
-| `mcp-trust-cli` (Rust) | Skeleton |
-| `mcp-trust-proxy` (Rust) | Skeleton |
+| JSON Schemas + examples | CI validated |
+| Example-chain verifier | Available at `scripts/verify_examples.js` |
+| `mcp-trust-cli` / `mcp-trust-proxy` (Rust) | Next deliverable |
 | Reference registry | Bootstrapping |
 | Seed attestations (top 20 MCP servers) | In progress |
 | Sigstore keyless signing | Planned for v0.2 |

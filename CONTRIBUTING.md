@@ -1,13 +1,12 @@
 # Contributing
 
-This placeholder repository tracks the standalone `mcp-trust-registry` draft.
+This repository tracks the public v0.1 draft of the standalone `mcp-trust-registry` spec.
 
-For now, the canonical spec lives in:
+The draft spec lives in:
 
-https://github.com/AndrewXie-Rich/x-hub-system/tree/main/specs/mcp-trust-registry
+spec/protocol-v0.1.md
 
-Please open issues here for discussion, but reference the canonical spec path
-when commenting on specific sections or schemas.
+Please open issues here for discussion and reference specific sections or schema files when commenting.
 
 Contributions are accepted under Apache 2.0 for implementation artifacts and
 CC BY 4.0 for specification text, matching the draft README.

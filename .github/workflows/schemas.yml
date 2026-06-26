@@ -1,0 +1,28 @@
+name: schemas
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'schemas/**'
+      - 'scripts/check_mcp_trust_schemas.sh'
+      - '.github/workflows/schemas.yml'
+  pull_request:
+    paths:
+      - 'schemas/**'
+      - 'scripts/check_mcp_trust_schemas.sh'
+      - '.github/workflows/schemas.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate schemas and examples
+        run: ./scripts/check_mcp_trust_schemas.sh

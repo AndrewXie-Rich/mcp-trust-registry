@@ -8,9 +8,9 @@
 
 > **A trust layer above MCP.** Sigstore-style attestations + capability tokens + a local enforcement proxy. So your AI agent can't `rm -rf` because an MCP server "just needed shell access".
 
-[Specification (v0.1 draft)](https://github.com/AndrewXie-Rich/x-hub-system/blob/main/specs/mcp-trust-registry/protocol-v0.1.md) · [60-second demo](https://github.com/AndrewXie-Rich/x-hub-system/blob/main/specs/mcp-trust-registry/demo-60s.md) · 中文 (TBD)
+[Specification (v0.1 draft)](spec/protocol-v0.1.md) · [60-second demo](demo-60s.md) · 中文 (TBD)
 
-> This is a placeholder repository for the standalone `mcp-trust-registry` draft. The canonical v0.1 spec, schemas, examples, and RFC body currently live in [X-Hub-System](https://github.com/AndrewXie-Rich/x-hub-system/tree/main/specs/mcp-trust-registry).
+> This repository hosts the public v0.1 draft of the standalone `mcp-trust-registry` spec. Development source originated in [X-Hub-System](https://github.com/AndrewXie-Rich/x-hub-system), but public review can happen here.
 
 ## What you see
 
@@ -74,7 +74,7 @@ Three things you didn't have before:
 - **Capability expansion guard** — if a new version asks for capabilities the old one didn't, you must explicitly re-grant. No silent privilege creep.
 - **Two-way revocation** — publishers can recall versions; registries can quarantine bad actors; both are signed and verified locally.
 
-Full data model and wire format: [`protocol-v0.1.md`](https://github.com/AndrewXie-Rich/x-hub-system/blob/main/specs/mcp-trust-registry/protocol-v0.1.md).
+Full data model and wire format: [`spec/protocol-v0.1.md`](spec/protocol-v0.1.md).
 
 ## Status
 
@@ -87,7 +87,7 @@ Full data model and wire format: [`protocol-v0.1.md`](https://github.com/AndrewX
 | Seed attestations (top 20 MCP servers) | In progress |
 | Sigstore keyless signing | Planned for v0.2 |
 
-Schemas validated in CI: see [`scripts/check_mcp_trust_schemas.sh`](https://github.com/AndrewXie-Rich/x-hub-system/blob/main/scripts/check_mcp_trust_schemas.sh) and [`scripts/check_spinoff_schemas.sh`](https://github.com/AndrewXie-Rich/x-hub-system/blob/main/scripts/check_spinoff_schemas.sh).
+Schemas validate with [`scripts/check_mcp_trust_schemas.sh`](scripts/check_mcp_trust_schemas.sh).
 
 A reference deployment of the proxy ships inside [X-Hub-System](https://github.com/AndrewXie-Rich/x-hub-system) as its skills trust subsystem.
 
